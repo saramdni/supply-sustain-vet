@@ -1,0 +1,70 @@
+/*if i wanted to use pure css*/
+
+.custom-input-wrapper {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 1rem;
+}
+
+.input-label {
+  margin-bottom: 0.5rem;
+  font-size: 14px;
+  color: #666;
+  transition: all 0.3s ease;
+}
+
+.input-label.focused {
+  font-size: 12px;
+  color: #007bff;
+}
+
+.input-container {
+  display: flex;
+  align-items: center;
+  border: 1px solid #ccc;
+  padding: 8px;
+  border-radius: 4px;
+  transition: all 0.3s ease;
+}
+
+.input-container.focused {
+  border-color: #007bff;
+}
+
+.input-container.error {
+  border-color: #ff4d4d;
+}
+
+.input-container.success {
+  border-color: #28a745;
+}
+
+.input-icon {
+  margin-right: 8px;
+}
+
+.custom-input {
+  width: 100%;
+  border: none;
+  outline: none;
+  font-size: 16px;
+}
+
+.custom-input::placeholder {
+  color: #ccc;
+}
+
+.disabled .input-container {
+  background-color: #f5f5f5;
+  cursor: not-allowed;
+}
+
+.validation-message {
+  margin-top: 4px;
+  font-size: 12px;
+  color: #ff4d4d;
+}
+
+.validation-message.success {
+  color: #28a745;
+}
